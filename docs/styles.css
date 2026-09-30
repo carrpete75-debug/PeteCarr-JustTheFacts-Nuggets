@@ -828,3 +828,199 @@ h3 {
   color: var(--muted);
   font-style: italic;
 }
+
+/* ---- Nav: current page (added 2026-09-30 with the Schedule page) ---- */
+.nav a[aria-current="page"] {
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 700;
+}
+
+/* ---- Schedule page (docs/schedule.html, added 2026-09-30) ---- */
+.sched-main > .card {
+  margin-bottom: 1rem;
+}
+
+.sched-count {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.sched-table {
+  font-size: 0.9rem;
+  table-layout: fixed;
+  min-width: 46rem;
+}
+
+.sched-table th:nth-child(1) { width: 12%; }
+.sched-table th:nth-child(2) { width: 22%; }
+.sched-table th:nth-child(3) { width: 24%; }
+.sched-table th:nth-child(4) { width: 15%; }
+.sched-table th:nth-child(5) { width: 19%; }
+.sched-table th:nth-child(6) { width: 8%; }
+
+.sched-table td {
+  white-space: normal;
+}
+
+.sched-table td {
+  vertical-align: middle;
+}
+
+.sched-table tr.is-home td {
+  background: var(--gold-soft);
+}
+
+.sched-table tr.is-home td:first-child {
+  box-shadow: inset 3px 0 0 var(--gold);
+  padding-left: 0.55rem;
+}
+
+.sched-table td:first-child,
+.sched-table th:first-child {
+  padding-left: 0.55rem;
+}
+
+.sched-ha {
+  color: var(--muted);
+  display: inline-block;
+  font-weight: 700;
+  min-width: 1.4rem;
+}
+
+.sched-table tr.is-home .sched-ha {
+  color: var(--navy);
+}
+
+.sched-tag {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--navy-soft);
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.45rem;
+  vertical-align: 0.1em;
+}
+
+.sched-city {
+  color: var(--muted);
+  display: block;
+  font-size: 0.78rem;
+}
+
+.sched-w,
+.sched-l {
+  display: inline-block;
+  font-weight: 800;
+  min-width: 1rem;
+}
+
+.sched-w { color: #1b6e3a; }
+.sched-l { color: var(--red); }
+
+.sched-rec {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.sched-tix .ticket-link {
+  margin-left: 0;
+}
+
+.sched-legend {
+  white-space: nowrap;
+}
+
+.sched-legend__swatch {
+  background: var(--gold-soft);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  display: inline-block;
+  height: 0.8rem;
+  margin-right: 0.3rem;
+  vertical-align: -0.1em;
+  width: 1.2rem;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (max-width: 41.99rem) {
+  .sched-table thead {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
+
+  .sched-table,
+  .sched-table tbody,
+  .sched-table tr,
+  .sched-table td {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sched-table tr {
+    border-bottom: 1px solid var(--line);
+    padding: 0.45rem 0.55rem;
+  }
+
+  .sched-table tr.is-home {
+    background: var(--gold-soft);
+    box-shadow: inset 3px 0 0 var(--gold);
+  }
+
+  .sched-table td,
+  .sched-table tr.is-home td,
+  .sched-table td:first-child,
+  .sched-table tr.is-home td:first-child {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0.1rem 0;
+    white-space: normal;
+  }
+
+  .sched-table td::before {
+    color: var(--muted);
+    content: attr(data-label);
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    min-width: 6.5rem;
+    text-transform: uppercase;
+  }
+
+  .sched-table td.sched-tix:empty {
+    display: none;
+  }
+
+  .sched-table td.sched-tix::before {
+    content: "";
+    min-width: 6.5rem;
+  }
+
+  .sched-city {
+    display: inline;
+    margin-left: 0.3rem;
+  }
+}
