@@ -1,0 +1,99 @@
+{
+  "_about": "Hand-maintained contract status + 2026-27 cap hits for docs/roster.html. Cap hits from Spotrac's 2026-27 Nuggets cap table (checked against Basketball-Reference team salaries). Update when a signing/waiver/two-way/conversion happens. status: standard | two-way | camp-e10 | camp. Never guess a number; use null.",
+  "checked": "Wed Sep 30, 2026",
+  "players": {
+    "Nikola Jokic": {
+      "status": "standard",
+      "cap_hit": 59033114,
+      "pre_draft": "Mega Basket (Serbia)"
+    },
+    "Jamal Murray": {
+      "status": "standard",
+      "cap_hit": 50105628
+    },
+    "Aaron Gordon": {
+      "status": "standard",
+      "cap_hit": 31978037,
+      "note": "Spotrac cap hit. Basketball-Reference lists $33,658,037, which includes $1.68M in unlikely incentives."
+    },
+    "Cameron Johnson": {
+      "status": "standard",
+      "cap_hit": 23062500
+    },
+    "Christian Braun": {
+      "status": "standard",
+      "cap_hit": 21551726
+    },
+    "Zeke Nnaji": {
+      "status": "standard",
+      "cap_hit": 7466667
+    },
+    "Spencer Jones": {
+      "status": "standard",
+      "cap_hit": 6000000
+    },
+    "Julian Strawther": {
+      "status": "standard",
+      "cap_hit": 4826931
+    },
+    "DaRon Holmes II": {
+      "status": "standard",
+      "cap_hit": 3372120
+    },
+    "DeMar DeRozan": {
+      "status": "standard",
+      "cap_hit": 2449421,
+      "min": true,
+      "base": 3876529
+    },
+    "Tyus Jones": {
+      "status": "standard",
+      "cap_hit": 2449421,
+      "min": true,
+      "base": 3876529
+    },
+    "Marvin Bagley III": {
+      "status": "standard",
+      "cap_hit": 2449421,
+      "min": true,
+      "base": 3506659
+    },
+    "Alpha Diallo": {
+      "status": "standard",
+      "cap_hit": 1357763
+    },
+    "Trevon Brazile": {
+      "status": "standard",
+      "cap_hit": 1357763
+    },
+    "KJ Simpson": {
+      "status": "two-way",
+      "cap_hit": null
+    },
+    "Bryce Hopkins": {
+      "status": "two-way",
+      "cap_hit": null
+    },
+    "Cam Whitmore": {
+      "status": "two-way",
+      "cap_hit": null
+    },
+    "Lonnie Walker IV": {
+      "status": "camp",
+      "cap_hit": null,
+      "note": "Non-guaranteed training-camp deal (Spotrac / Hoops Rumors)."
+    },
+    "Dane Goodwin": {
+      "status": "camp-e10",
+      "cap_hit": null
+    },
+    "Coleman Hawkins": {
+      "status": "camp-e10",
+      "cap_hit": null
+    },
+    "Emanuel Miller": {
+      "status": "camp-e10",
+      "cap_hit": null
+    }
+  }
+}

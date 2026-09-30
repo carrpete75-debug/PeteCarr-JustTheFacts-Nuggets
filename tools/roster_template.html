@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Current 2026–27 Denver Nuggets roster: {{TOTAL}} players with jersey numbers, positions, height, weight, age, experience, college, contract type, 2026–27 cap hits and coaching staff.">
+  <title>Roster 2026–27 | Just the Facts — Nuggets</title>
+  <link rel="stylesheet" href="styles.css?v=nuggets-3">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nuggets-banner" role="img" aria-label="Denver Nuggets — Just the Facts">
+      <span class="nuggets-banner__accent nuggets-banner__accent--left" aria-hidden="true"></span>
+      <span class="nuggets-banner__accent" aria-hidden="true"></span>
+      <div class="nuggets-banner__inner">
+        <div class="nuggets-banner__titles">
+          <p class="nuggets-banner__team">Denver Nuggets</p>
+          <span class="nuggets-banner__rule" aria-hidden="true"></span>
+          <p class="nuggets-banner__site">Just the Facts</p>
+        </div>
+      </div>
+    </div>
+    <div class="header-bar">
+      <div class="header-inner header-inner--main">
+        <div class="brand-block">
+          <div>
+            <a class="brand" href="index.html">Just the Facts — Nuggets</a>
+            <p class="tagline">A daily, unofficial fan briefing</p>
+          </div>
+        </div>
+        <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="roster.html" aria-current="page">Roster</a>
+        <a href="archive/index.html">Archive</a>
+      </nav>
+      </div>
+    </div>
+  </header>
+  <div class="page-shell">
+  <main class="main sched-main ros-main">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="kicker">2026–27 season</p>
+      <h1 id="page-title">Nuggets roster</h1>
+      <p class="deck">{{DECK}}</p>
+      <p class="pub-meta">As of <strong>{{ASOF}}</strong> · <span class="ros-legend"><span class="ros-tag ros-tag--tw">Two-way</span> <span class="ros-tag ros-tag--camp">Exhibit 10</span> / <span class="ros-tag ros-tag--camp">Camp deal</span> = not on a standard contract</span></p>
+    </section>
+    <section class="card" aria-labelledby="roster-heading">
+      <div class="card-head"><h2 id="roster-heading">Players</h2><span class="sched-count">{{TOTAL}} players</span></div>
+      <div class="table-wrap"><table class="facts ros-table"><thead><tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">Pos</th><th scope="col">Ht</th><th scope="col">Wt</th><th scope="col">Age</th><th scope="col">Exp (yrs)</th><th scope="col">College / pre-draft</th><th scope="col">2026–27 cap hit</th></tr></thead><tbody>
+{{ROWS}}
+      </tbody></table></div>
+      {{NOTES}}
+    </section>
+    <section class="card" aria-labelledby="staff-heading">
+      <h2 id="staff-heading">Coaching staff</h2>
+      <dl class="data-list">{{STAFF}}</dl>
+      <p class="source-row">Source: <a href="https://www.nba.com/nuggets/roster" target="_blank" rel="noopener noreferrer">nba.com/nuggets/roster</a> (head coach matches ESPN)</p>
+    </section>
+    <section class="card" aria-labelledby="inj-heading">
+      <h2 id="inj-heading">Injury report</h2>
+      {{INJURIES}}
+      <p class="source-row">Source: <a href="https://www.espn.com/nba/injuries" target="_blank" rel="noopener noreferrer">ESPN NBA injuries</a></p>
+    </section>
+    <section class="card" aria-labelledby="ros-sources-heading">
+      <h2 id="ros-sources-heading">Sources &amp; notes</h2>
+      <p class="note">The player list, numbers, positions, height, weight, age and college come from ESPN. Each name links to the player’s ESPN page. The list is checked against the Nuggets’ official roster on nba.com, which also supplies experience (completed NBA seasons; “Rookie” means none) and the coaching staff. Two-way and camp tags come from the Nuggets’ official transactions as reported by Hoops Rumors, RealGM and Spotrac. Two-way players can be active for up to 50 regular-season games and cannot play in the playoffs unless promoted. Exhibit 10 and camp deals are non-guaranteed.</p>
+      <p class="note">Cap hits come from Spotrac’s 2026–27 Nuggets cap table and are checked against Basketball-Reference (checked {{CHECKED}}). Two-way and non-guaranteed camp contracts carry no listed cap hit, so none is shown.</p>
+      <p class="source-row">Sources: <a href="https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/roster" target="_blank" rel="noopener noreferrer">ESPN roster API</a> · <a href="https://www.nba.com/nuggets/roster" target="_blank" rel="noopener noreferrer">nba.com/nuggets/roster</a> · <a href="https://www.spotrac.com/nba/denver-nuggets/cap/_/year/2026" target="_blank" rel="noopener noreferrer">Spotrac cap table</a> · <a href="https://www.basketball-reference.com/teams/DEN/2027.html" target="_blank" rel="noopener noreferrer">Basketball-Reference</a> · <a href="https://www.espn.com/nba/injuries" target="_blank" rel="noopener noreferrer">ESPN injuries</a></p>
+    </section>
+  </main>
+  </div>
+  <footer class="footer"><div class="footer-inner"><p>Unofficial fan briefing. Not affiliated with the Denver Nuggets or the NBA. Rosters change often; check the official team roster for the latest.</p></div></footer>
+</body>
+</html>

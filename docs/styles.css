@@ -1024,3 +1024,205 @@ h3 {
     margin-left: 0.3rem;
   }
 }
+
+/* ---- Roster page (docs/roster.html, added 2026-09-30) ---- */
+.ros-table {
+  font-size: 0.9rem;
+  min-width: 52rem;
+}
+
+.ros-table td {
+  vertical-align: middle;
+}
+
+.ros-table td:first-child,
+.ros-table th:first-child {
+  padding-left: 0.55rem;
+}
+
+.ros-num {
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  width: 3rem;
+}
+
+.ros-player a {
+  font-weight: 700;
+}
+
+.ros-cap {
+  font-variant-numeric: tabular-nums;
+}
+
+.ros-table tr.ros-group th {
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  padding: 0.4rem 0.55rem;
+  text-transform: uppercase;
+}
+
+.ros-table tr.ros-two-way td,
+.ros-table tr.ros-camp td,
+.ros-table tr.ros-camp-e10 td {
+  background: var(--paper);
+}
+
+.ros-tag {
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.45rem;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+
+.ros-tag--tw {
+  background: var(--white);
+  border: 1px solid var(--navy-soft);
+  color: var(--navy-soft);
+}
+
+.ros-tag--camp {
+  background: var(--gold-soft);
+  border: 1px solid var(--gold);
+  color: var(--gold-deep);
+}
+
+.ros-legend .ros-tag:first-child {
+  margin-left: 0;
+}
+
+.ros-inj {
+  background: var(--white);
+  border: 1px solid var(--red);
+  border-radius: 999px;
+  color: var(--red);
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.45rem;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+
+.ros-fn {
+  color: var(--muted);
+  font-size: 0.7em;
+  margin-left: 0.1rem;
+}
+
+.ros-foot {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin: 0.6rem 0 0;
+}
+
+.ros-injuries {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+@media (max-width: 41.99rem) {
+  .ros-table thead {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
+
+  .ros-table,
+  .ros-table tbody,
+  .ros-table tr,
+  .ros-table td,
+  .ros-table th {
+    display: block;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .ros-table tr {
+    border-bottom: 1px solid var(--line);
+    padding: 0.45rem 0.55rem;
+  }
+
+  .ros-table tr.ros-group {
+    padding: 0;
+  }
+
+  .ros-table tr.ros-two-way,
+  .ros-table tr.ros-camp,
+  .ros-table tr.ros-camp-e10 {
+    background: var(--paper);
+  }
+
+  .ros-table td,
+  .ros-table td:first-child {
+    background: transparent !important;
+    border: 0;
+    padding: 0.1rem 0;
+    white-space: normal;
+  }
+
+  .ros-table td::before {
+    color: var(--muted);
+    content: attr(data-label);
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    min-width: 7.5rem;
+    text-transform: uppercase;
+  }
+
+  .ros-table td.ros-player {
+    font-size: 1rem;
+  }
+
+  .ros-table td.ros-num::before,
+  .ros-table td.ros-player::before {
+    content: none;
+  }
+
+  .ros-table td.ros-num {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.4rem;
+  }
+
+  .ros-table td.ros-num::after {
+    content: " ·";
+    color: var(--muted);
+  }
+
+  .ros-table td.ros-player {
+    display: inline-block;
+    width: calc(100% - 3rem);
+  }
+
+  .ros-table td.ros-player + td {
+    margin-top: 0.2rem;
+  }
+
+  .ros-table td.ros-stat {
+    display: inline-block;
+    margin-right: 0.85rem;
+    width: auto;
+  }
+
+  .ros-table td.ros-stat::before {
+    margin-right: 0.3rem;
+    min-width: 0;
+  }
+
+  .ros-table td.ros-wide::before {
+    min-width: 8.5rem;
+  }
+}
