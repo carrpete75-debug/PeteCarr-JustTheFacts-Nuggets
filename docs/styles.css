@@ -586,6 +586,28 @@ h3 {
   padding-bottom: 0;
 }
 
+.ticket-link {
+  border: 1px solid var(--navy-soft);
+  border-radius: 999px;
+  color: var(--navy-soft);
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  margin-left: 0.45rem;
+  padding: 0.12rem 0.55rem;
+  text-decoration: none;
+  vertical-align: 0.08em;
+  white-space: nowrap;
+}
+
+.ticket-link:hover,
+.ticket-link:focus-visible {
+  background: var(--navy-soft);
+  color: #fff;
+}
+
 .archive-list {
   list-style: none;
   margin: 0;
