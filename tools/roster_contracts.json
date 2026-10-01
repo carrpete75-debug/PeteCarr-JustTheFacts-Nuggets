@@ -1,6 +1,6 @@
 {
   "_about": "Hand-maintained contract status + 2026-27 cap hits for docs/roster.html. Cap hits from Spotrac's 2026-27 Nuggets cap table (checked against Basketball-Reference team salaries). Update when a signing/waiver/two-way/conversion happens. status: standard | two-way | camp-e10 | camp. Never guess a number; use null.",
-  "checked": "Wed Sep 30, 2026",
+  "checked": "Thu Oct 1, 2026",
   "players": {
     "Nikola Jokic": {
       "status": "standard",
@@ -66,10 +66,6 @@
       "status": "standard",
       "cap_hit": 1357763
     },
-    "KJ Simpson": {
-      "status": "two-way",
-      "cap_hit": null
-    },
     "Bryce Hopkins": {
       "status": "two-way",
       "cap_hit": null
@@ -94,6 +90,11 @@
     "Emanuel Miller": {
       "status": "camp-e10",
       "cap_hit": null
+    },
+    "Ryan Nembhard": {
+      "status": "two-way",
+      "cap_hit": null,
+      "note": "Signed two-way Sep 30, 2026 (ESPN/NBA.com/Hoops Rumors); KJ Simpson waived to clear the spot."
     }
   }
 }
