@@ -204,6 +204,11 @@ def main():
             f'Sorted by position, then jersey number.')
     asof = mt(now)
     tpl = open(os.path.join(HERE, "roster_template.html")).read()
+    # Rocky (mascot) is a permanent static card in the template, outside {{ROWS}}:
+    # never counted as a player and never part of the ESPN/nba.com check above.
+    if 'id="mascot"' not in tpl:
+        print("TEMPLATE ERROR: the permanent Rocky mascot card (id=\"mascot\") is missing from roster_template.html", file=sys.stderr)
+        sys.exit(3)
     out = (tpl.replace("{{DECK}}", E(deck)).replace("{{ASOF}}", E(asof))
               .replace("{{ROWS}}", "\n".join(body)).replace("{{NOTES}}", notes_html)
               .replace("{{STAFF}}", "".join(staff_html)).replace("{{INJURIES}}", inj_html)
