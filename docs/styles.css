@@ -305,6 +305,8 @@ a:focus-visible {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 0.35rem;
 }
 
@@ -315,6 +317,7 @@ a:focus-visible {
   font-size: 0.9rem;
   padding: 0.3rem 0.78rem;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav a:hover,
