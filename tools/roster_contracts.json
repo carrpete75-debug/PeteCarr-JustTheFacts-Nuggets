@@ -1,6 +1,6 @@
 {
   "_about": "Hand-maintained contract status + 2026-27 cap hits for docs/roster.html. Cap hits from Spotrac's 2026-27 Nuggets cap table (checked against Basketball-Reference team salaries). Update when a signing/waiver/two-way/conversion happens. status: standard | two-way | camp-e10 | camp. Never guess a number; use null.",
-  "checked": "Sat Oct 3, 2026",
+  "checked": "Sun Oct 4, 2026",
   "players": {
     "Nikola Jokic": {
       "status": "standard",
