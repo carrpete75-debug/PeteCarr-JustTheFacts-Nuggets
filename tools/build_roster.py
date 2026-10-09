@@ -62,9 +62,17 @@ def main():
 
     espn = json.loads(get(ESPN_ROSTER, ua=False))
     inj = json.loads(get(ESPN_INJ, ua=False))
-    nba_html = get(NBA_ROSTER)
-    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', nba_html, re.S)
-    nba = json.loads(m.group(1))["props"]["pageProps"]["rosterData"]
+    # nba.com sometimes serves rosterData={"error":...}; retry with a cache-buster.
+    import time
+    for attempt in range(6):
+        nba_html = get(NBA_ROSTER + (f"?r={int(time.time())}{attempt}" if attempt else ""))
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', nba_html, re.S)
+        nba = json.loads(m.group(1))["props"]["pageProps"]["rosterData"]
+        if isinstance(nba, dict) and "roster" in nba:
+            break
+        time.sleep(5)
+    else:
+        sys.exit("NBA.COM ERROR: rosterData has no roster after retries: " + str(nba)[:200])
     contracts = json.load(open(os.path.join(HERE, "roster_contracts.json")))
     cmap = {norm(k): v for k, v in contracts["players"].items()}
 
