@@ -83,11 +83,21 @@ def main():
             for i in t.get("injuries", []):
                 den_inj[norm(i["athlete"]["displayName"])] = i
 
-    players, issues = [], []
+    players, issues, waived_notes = [], [], []
+    # status "waived" in roster_contracts.json: the player's release is confirmed in
+    # NBA.com's official transaction log, but ESPN's and/or nba.com's roster pages
+    # still list him. He is left off the table and footnoted until both drop him.
+    waived = {k for k, v in cmap.items() if v.get("status") == "waived"}
+    def waived_note(name, k, where):
+        c = cmap[k]
+        waived_notes.append(f'{name} is not shown: {c.get("note") or "waived."} {where[0].upper() + where[1:]} still listed him when this page was built.')
     for p in espn["athletes"]:
         k = norm(p["displayName"])
         n = nba_by.get(k)
         c = cmap.get(k)
+        if k in waived:
+            waived_note(p["displayName"], k, "ESPN’s roster" + (" and nba.com’s roster page" if n else ""))
+            continue
         link = next((l["href"] for l in p.get("links", []) if "playercard" in l.get("rel", [])), None)
         if not n:
             issues.append(f'{p["displayName"]} is on ESPN\'s roster but not nba.com\'s')
@@ -109,6 +119,10 @@ def main():
         })
     espn_keys = {norm(p["displayName"]) for p in espn["athletes"]}
     for k, n in nba_by.items():
+        if k in waived:
+            if k not in espn_keys:
+                waived_note(n["name"], k, "nba.com’s roster page")
+            continue
         if k not in espn_keys:
             issues.append(f'{n["name"]} is on nba.com\'s roster but not ESPN\'s')
     if issues and not a.allow_mismatch:
@@ -202,6 +216,7 @@ def main():
             notes.append(f'* {p["name"]}: {p["cnote"]}')
     if fn_rows:
         notes.append("† nba.com’s roster page lists a different number: " + "; ".join(fn_rows) + ". ESPN’s number is shown; confirm once the team publishes its opening-night roster.")
+    notes += waived_notes
     if issues:
         notes.append("Source mismatch: " + "; ".join(issues) + ".")
     notes_html = "".join(f'<p class="ros-foot">{E(n)}</p>' for n in notes)
