@@ -121,7 +121,8 @@ def build(d, asof):
             f'<td data-label="Guarantees" class="cap-text">{E(p["partial_guarantee"])}</td>'
             f'<td data-label="How acquired" class="cap-text">{E(p["acquired"])}</td>'
             f'<td data-label="Status / next decision" class="cap-text">{DASH if p["status_note"] == "—" else E(p["status_note"])}</td></tr>')
-    rows.append(f'<tr class="ros-group"><th colspan="{ncol}" scope="colgroup">Exhibit 10 camp deals · {len(e10)} · non-guaranteed</th></tr>')
+    if e10:
+        rows.append(f'<tr class="ros-group"><th colspan="{ncol}" scope="colgroup">Exhibit 10 camp deals · {len(e10)} · non-guaranteed</th></tr>')
     for p in e10:
         rows.append(
             '<tr class="ros-camp-e10">' + name_cell(p, ' <span class="ros-tag ros-tag--camp">Exhibit 10</span>') +

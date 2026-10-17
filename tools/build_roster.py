@@ -222,9 +222,15 @@ def main():
     notes_html = "".join(f'<p class="ros-foot">{E(n)}</p>' for n in notes)
 
     total = len(players)
-    deck = (f'{total} players under contract for training camp: {counts["standard"]} on standard deals, '
-            f'{counts["two-way"]} on two-way deals and {counts["camp-e10"] + counts["camp"]} on non-guaranteed camp deals. '
-            f'Sorted by position, then jersey number.')
+    ncamp = counts["camp-e10"] + counts["camp"]
+    if ncamp:
+        deck = (f'{total} players under contract for training camp: {counts["standard"]} on standard deals, '
+                f'{counts["two-way"]} on two-way deals and {ncamp} on non-guaranteed camp deals. '
+                f'Sorted by position, then jersey number.')
+    else:
+        deck = (f'{total} players under contract: {counts["standard"]} on standard deals and '
+                f'{counts["two-way"]} on two-way deals (no camp deals left). '
+                f'Sorted by position, then jersey number.')
     asof = mt(now)
     tpl = open(os.path.join(HERE, "roster_template.html")).read()
     # Rocky (mascot) is a permanent static card in the template, outside {{ROWS}}:

@@ -1,6 +1,6 @@
 {
   "_about": "Hand-maintained data for docs/salary-cap.html (built by tools/build_cap.py). Primary source: Spotrac 2026-27 Nuggets cap table + multi-year page; cross-checked against Basketball-Reference contracts (DEN), Hoops Rumors and NBA.com. Never guess: use null for anything unverified (renders as an em dash with a note). Amounts are whole dollars. option: PO = player option, TO = team option, ETO = early termination option, NG = non-guaranteed. When a signing/waiver/option/extension happens, edit this file and rerun the builder.",
-  "checked": "2026-10-17T05:00:00-06:00",
+  "checked": "2026-10-17T16:45:00-06:00",
   "season": "2026-27",
   "future_seasons": [
     "2027-28",
@@ -307,27 +307,6 @@
       "partial_guarantee": "50% guaranteed on Oct 20 (Spotrac); current partial guarantee not reported",
       "acquired": "Free agent, signed Sept 30, 2026 (KJ Simpson waived to open the slot)",
       "status_note": "—"
-    },
-    {
-      "name": "Dane Goodwin",
-      "status": "camp-e10",
-      "type": "Exhibit 10",
-      "acquired": "Free agent, signed Sept 24, 2026",
-      "status_note": "Non-guaranteed"
-    },
-    {
-      "name": "Coleman Hawkins",
-      "status": "camp-e10",
-      "type": "Exhibit 10",
-      "acquired": "Free agent, signed Sept 24, 2026",
-      "status_note": "Non-guaranteed"
-    },
-    {
-      "name": "Emanuel Miller",
-      "status": "camp-e10",
-      "type": "Exhibit 10",
-      "acquired": "Free agent, signed Sept 24, 2026",
-      "status_note": "Non-guaranteed"
     }
   ],
   "dead_money": [
@@ -342,6 +321,10 @@
     }
   ],
   "waived_no_charge": [
+    {
+      "name": "Dane Goodwin, Coleman Hawkins, Emanuel Miller",
+      "note": "Exhibit 10, non-guaranteed; all three waived Sat Oct 17, 2026, the last day to cut fully non-guaranteed deals without a 2026–27 cap charge (NBA.com transaction log; Hoops Rumors). They clear waivers Mon Oct 19. Hoops Rumors expects most or all to join the Grand Rapids Gold."
+    },
     {
       "name": "Lonnie Walker IV",
       "note": "Exhibit 9, non-guaranteed; waived Oct 12, 2026. Now signed with Besiktas (Hoops Rumors)."
@@ -393,11 +376,11 @@
   "key_dates": [
     {
       "date": "Sat Oct 17",
-      "text": "Last day to waive players on fully non-guaranteed deals (here, the three Exhibit 10s) without any 2026–27 cap charge. They must clear waivers before the season starts."
+      "text": "Last day to waive players on fully non-guaranteed deals without any 2026–27 cap charge. Denver waived all three Exhibit 10s (Goodwin, Hawkins, Miller) today, leaving 14 standard and 3 two-way contracts."
     },
     {
       "date": "Mon Oct 19",
-      "text": "Roster limit drops from 21 to 18 (15 standard + 3 two-way) at 3:00 PM MT. Rookie-scale extension deadline at 4:00 PM MT (Strawther). Last day to convert an Exhibit 10 deal to two-way (Denver's 3 two-way slots are full)."
+      "text": "Roster limit drops from 21 to 18 (15 standard + 3 two-way) at 3:00 PM MT; Denver is already at 17. Rookie-scale extension deadline at 4:00 PM MT (Strawther)."
     },
     {
       "date": "Tue Oct 20",
