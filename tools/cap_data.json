@@ -1,0 +1,493 @@
+{
+  "_about": "Hand-maintained data for docs/salary-cap.html (built by tools/build_cap.py). Primary source: Spotrac 2026-27 Nuggets cap table + multi-year page; cross-checked against Basketball-Reference contracts (DEN), Hoops Rumors and NBA.com. Never guess: use null for anything unverified (renders as an em dash with a note). Amounts are whole dollars. option: PO = player option, TO = team option, ETO = early termination option, NG = non-guaranteed. When a signing/waiver/option/extension happens, edit this file and rerun the builder.",
+  "checked": "2026-10-17T05:00:00-06:00",
+  "season": "2026-27",
+  "future_seasons": [
+    "2027-28",
+    "2028-29",
+    "2029-30",
+    "2030-31"
+  ],
+  "thresholds": {
+    "salary_cap": 164961000,
+    "luxury_tax": 200428000,
+    "first_apron": 209015000,
+    "second_apron": 221686000,
+    "minimum_team_salary": 148465000,
+    "taxpayer_mle": 6064000,
+    "source": "NBA.com official release, June 30, 2026; matches RealGM salary-cap history and The CBA Guide"
+  },
+  "team": {
+    "spotrac_active_total": 217460512,
+    "tax_salary": 219218837,
+    "apron_salary": 224836337,
+    "spotrac_cap_holds_total": 16881642,
+    "spotrac_total_cap_allocations": 235008821,
+    "hoopsrumors_tax_salary_rounded": "$219.2MM",
+    "hoopsrumors_apron_salary_rounded": "$224.8MM",
+    "bref_total_excl_diallo": 217782749,
+    "tax_bill_estimates": [
+      {
+        "amount": 37712476,
+        "source": "Spotrac team tax tracker (Oct 16, 2026)"
+      },
+      {
+        "amount": 75290000,
+        "source": "Yossi Gozlan / CapSheets via Hoops Rumors (Sept 2026), which says Denver pays the repeater rate"
+      }
+    ]
+  },
+  "players": [
+    {
+      "name": "Nikola Jokic",
+      "display": "Nikola Jokić",
+      "status": "standard",
+      "type": "Veteran extension (designated/supermax)",
+      "cap_hit": 59033114,
+      "guaranteed": 59033114,
+      "future": {
+        "2027-28": {
+          "amount": 62841702,
+          "option": "PO",
+          "fn": "jokic"
+        }
+      },
+      "guarantee": "Fully guaranteed in 2026–27; 2027–28 is a player option",
+      "acquired": "Drafted by Denver, 2014 (No. 41)",
+      "signed": "5 yr / $270M extension, July 8, 2022",
+      "status_note": "2027–28 player option decision due June 29, 2027 (Spotrac)"
+    },
+    {
+      "name": "Jamal Murray",
+      "status": "standard",
+      "type": "Veteran extension",
+      "cap_hit": 50105628,
+      "guaranteed": 50105628,
+      "future": {
+        "2027-28": {
+          "amount": 53817156
+        },
+        "2028-29": {
+          "amount": 57528684
+        }
+      },
+      "guarantee": "Fully guaranteed through 2028–29 ($161,451,468 total)",
+      "acquired": "Drafted by Denver, 2016 (No. 7)",
+      "signed": "4 yr / $208M extension, Sept 11, 2024",
+      "status_note": "Extension-eligible from Sept 7, 2027 (Spotrac)"
+    },
+    {
+      "name": "Aaron Gordon",
+      "status": "standard",
+      "type": "Veteran extension",
+      "cap_hit": 31978037,
+      "guaranteed": 31978037,
+      "fn": "gordon",
+      "future": {
+        "2027-28": {
+          "amount": 34536280
+        },
+        "2028-29": {
+          "amount": 37094523,
+          "option": "PO"
+        }
+      },
+      "guarantee": "2026–27 and 2027–28 guaranteed; 2028–29 player option. Includes $1,680,000 in unlikely incentives (not in cap hit)",
+      "acquired": "Trade from Orlando, March 2021",
+      "signed": "3 yr / $103.6M extension (2026–27 to 2028–29), Oct 2024",
+      "status_note": "Extension-eligible from Oct 1, 2027; 2028–29 option due June 29, 2028 (Spotrac)"
+    },
+    {
+      "name": "Cameron Johnson",
+      "status": "standard",
+      "type": "Veteran (signed as free agent with Brooklyn)",
+      "cap_hit": 23062500,
+      "guaranteed": 22500000,
+      "fn": "johnson",
+      "future": {},
+      "guarantee": "$22,500,000 base guaranteed; cap hit adds $562,500 likely incentives. Another $3,937,500 in unlikely incentives",
+      "acquired": "Trade from Brooklyn, July 8, 2025 (Michael Porter Jr. deal)",
+      "signed": "4 yr / $108M with Brooklyn, July 6, 2023",
+      "status_note": "Final season; unrestricted free agent in 2027. Extension-eligible (Spotrac)"
+    },
+    {
+      "name": "Christian Braun",
+      "status": "standard",
+      "type": "Rookie-scale extension",
+      "cap_hit": 21551726,
+      "guaranteed": 21551726,
+      "future": {
+        "2027-28": {
+          "amount": 23275863
+        },
+        "2028-29": {
+          "amount": 25000000
+        },
+        "2029-30": {
+          "amount": 26724137
+        },
+        "2030-31": {
+          "amount": 28448274
+        }
+      },
+      "guarantee": "Fully guaranteed through 2030–31 ($125,000,000 total)",
+      "acquired": "Drafted by Denver, 2022 (No. 21)",
+      "signed": "5 yr / $125M extension, Oct 20, 2025",
+      "status_note": "Extension-eligible from Oct 1, 2028 (Spotrac)"
+    },
+    {
+      "name": "Zeke Nnaji",
+      "status": "standard",
+      "type": "Rookie-scale extension",
+      "cap_hit": 7466667,
+      "guaranteed": 7466667,
+      "future": {
+        "2027-28": {
+          "amount": 7466667,
+          "option": "PO"
+        }
+      },
+      "guarantee": "Guaranteed in 2026–27; 2027–28 player option",
+      "acquired": "Drafted by Denver, 2020 (No. 22)",
+      "signed": "4 yr / $32M extension, Oct 23, 2023",
+      "status_note": "2027–28 player option decision due June 29, 2027 (Spotrac)"
+    },
+    {
+      "name": "Spencer Jones",
+      "status": "standard",
+      "type": "Veteran (restricted free agent, offer sheet matched)",
+      "cap_hit": 6000000,
+      "guaranteed": 6000000,
+      "future": {
+        "2027-28": {
+          "amount": 5750000
+        }
+      },
+      "guarantee": "Fully guaranteed both seasons ($11,750,000 total)",
+      "acquired": "Re-signed: Denver matched Oklahoma City's offer sheet using Early Bird rights, July 2026",
+      "signed": "2 yr / $11.75M",
+      "status_note": "Unrestricted free agent in 2028 (Spotrac)"
+    },
+    {
+      "name": "Julian Strawther",
+      "status": "standard",
+      "type": "Rookie scale (4th year)",
+      "cap_hit": 4826931,
+      "guaranteed": 4826931,
+      "future": {},
+      "guarantee": "Fully guaranteed (4th-year team option exercised Oct 22, 2025)",
+      "acquired": "Drafted by Denver, 2023 (No. 29)",
+      "signed": "4 yr / $12.5M rookie scale, July 6, 2023",
+      "status_note": "Rookie-scale extension deadline Mon Oct 19, 4:00 PM MT; if not extended, restricted free agent in 2027 (qualifying offer $7,723,090 per Spotrac)",
+      "flag": "deadline"
+    },
+    {
+      "name": "DaRon Holmes II",
+      "status": "standard",
+      "type": "Rookie scale (3rd year)",
+      "cap_hit": 3372120,
+      "guaranteed": 3372120,
+      "fn": "holmes",
+      "future": {
+        "2027-28": {
+          "amount": 5547138,
+          "option": "TO"
+        }
+      },
+      "guarantee": "Guaranteed in 2026–27 (3rd-year option exercised Oct 22, 2025); 2027–28 team option",
+      "acquired": "Drafted 2024 (No. 22, via draft-night trade with Phoenix)",
+      "signed": "Rookie scale, July 9, 2024",
+      "status_note": "2027–28 team option ($5,547,138) decision due Mon Nov 2, 2026",
+      "flag": "deadline"
+    },
+    {
+      "name": "DeMar DeRozan",
+      "status": "standard",
+      "type": "Veteran minimum (1 yr)",
+      "cap_hit": 2449421,
+      "guaranteed": 3876529,
+      "base": 3876529,
+      "min": true,
+      "future": {},
+      "guarantee": "Fully guaranteed; salary $3,876,529, counts at the 2-year minimum on the cap",
+      "acquired": "Free agent, signed Sept 8, 2026 (minimum salary exception)",
+      "signed": "1 yr minimum",
+      "status_note": "Unrestricted free agent in 2027"
+    },
+    {
+      "name": "Tyus Jones",
+      "status": "standard",
+      "type": "Veteran minimum (1 yr)",
+      "cap_hit": 2449421,
+      "guaranteed": 3876529,
+      "base": 3876529,
+      "min": true,
+      "future": {},
+      "guarantee": "Fully guaranteed; salary $3,876,529, counts at the 2-year minimum on the cap. Waived right to veto a trade",
+      "acquired": "Re-signed as free agent, July 14, 2026 (minimum salary exception)",
+      "signed": "1 yr minimum",
+      "status_note": "Unrestricted free agent in 2027"
+    },
+    {
+      "name": "Marvin Bagley III",
+      "status": "standard",
+      "type": "Veteran minimum (1 yr)",
+      "cap_hit": 2449421,
+      "guaranteed": 3506659,
+      "base": 3506659,
+      "min": true,
+      "future": {},
+      "guarantee": "Fully guaranteed; salary $3,506,659, counts at the 2-year minimum on the cap",
+      "acquired": "Free agent, signed July 15, 2026 (minimum salary exception)",
+      "signed": "1 yr minimum",
+      "status_note": "Unrestricted free agent in 2027"
+    },
+    {
+      "name": "Trevon Brazile",
+      "status": "standard",
+      "type": "Second-round pick exception (rookie minimum)",
+      "cap_hit": 1357763,
+      "guaranteed": 1357763,
+      "fn": "brazile",
+      "future": {
+        "2027-28": {
+          "amount": 2294370
+        },
+        "2028-29": {
+          "amount": 2694363,
+          "option": "NG",
+          "note": "guaranteed if on roster July 7, 2028"
+        },
+        "2029-30": {
+          "amount": 2918152,
+          "option": "TO"
+        }
+      },
+      "guarantee": "First two years guaranteed ($3,652,133); 2028–29 non-guaranteed; 2029–30 team option",
+      "acquired": "Draft-night trade: Denver sent No. 26 (Tarris Reed Jr.) to San Antonio for No. 35 and two future 2nds",
+      "signed": "4 yr / $9,264,648, July 10, 2026",
+      "status_note": "Cannot be traded until Dec 15, 2026 (Spotrac)"
+    },
+    {
+      "name": "Alpha Diallo",
+      "status": "standard",
+      "type": "Minimum (1 yr, rookie minimum)",
+      "cap_hit": 1357763,
+      "guaranteed": 1357763,
+      "fn": "diallo",
+      "future": {},
+      "guarantee": "Fully guaranteed",
+      "acquired": "Free agent from AS Monaco, official July 16, 2026 (minimum salary exception)",
+      "signed": "1 yr minimum",
+      "status_note": "Spotrac lists him as a restricted free agent in 2027"
+    },
+    {
+      "name": "Bryce Hopkins",
+      "status": "two-way",
+      "type": "Two-way",
+      "salary": 678882,
+      "partial_guarantee": "$91,000 now; rises to $339,441 (50%) on the first day of the regular season, Oct 20",
+      "acquired": "Drafted by Denver, 2026 (No. 49)",
+      "status_note": "Spotrac lists him as a restricted free agent (two-way qualifying offer) in 2027"
+    },
+    {
+      "name": "Cam Whitmore",
+      "status": "two-way",
+      "type": "Two-way",
+      "salary": 678882,
+      "partial_guarantee": "50% guaranteed on Oct 20 (Spotrac); current partial guarantee not reported",
+      "acquired": "Free agent, signed Sept 18, 2026",
+      "status_note": "—"
+    },
+    {
+      "name": "Ryan Nembhard",
+      "status": "two-way",
+      "type": "Two-way",
+      "salary": 678882,
+      "partial_guarantee": "50% guaranteed on Oct 20 (Spotrac); current partial guarantee not reported",
+      "acquired": "Free agent, signed Sept 30, 2026 (KJ Simpson waived to open the slot)",
+      "status_note": "—"
+    },
+    {
+      "name": "Dane Goodwin",
+      "status": "camp-e10",
+      "type": "Exhibit 10",
+      "acquired": "Free agent, signed Sept 24, 2026",
+      "status_note": "Non-guaranteed"
+    },
+    {
+      "name": "Coleman Hawkins",
+      "status": "camp-e10",
+      "type": "Exhibit 10",
+      "acquired": "Free agent, signed Sept 24, 2026",
+      "status_note": "Non-guaranteed"
+    },
+    {
+      "name": "Emanuel Miller",
+      "status": "camp-e10",
+      "type": "Exhibit 10",
+      "acquired": "Free agent, signed Sept 24, 2026",
+      "status_note": "Non-guaranteed"
+    }
+  ],
+  "dead_money": [
+    {
+      "name": "Jonas Valanciunas",
+      "amounts": {
+        "2026-27": 666667,
+        "2027-28": 666667,
+        "2028-29": 666667
+      },
+      "note": "Waived July 2026; his $2,000,000 partial guarantee was stretched over three seasons (Aug 2026). Spotrac and Hoops Rumors agree; HoopsHype (Michael Scotto) first reported the stretch."
+    }
+  ],
+  "waived_no_charge": [
+    {
+      "name": "Lonnie Walker IV",
+      "note": "Exhibit 9, non-guaranteed; waived Oct 12, 2026. Now signed with Besiktas (Hoops Rumors)."
+    },
+    {
+      "name": "Pedro Bradshaw",
+      "note": "Signed and waived Oct 13, 2026 (NBA.com transaction log via Hoops Rumors)."
+    },
+    {
+      "name": "Steven Crowl",
+      "note": "Signed (Exhibit 10) and waived Oct 14, 2026 (Spotrac transaction log)."
+    },
+    {
+      "name": "KJ Simpson, Julian Reese",
+      "note": "Two-way contracts, waived this offseason. Two-way salary never counts against the cap."
+    }
+  ],
+  "cap_holds": {
+    "total": 16881642,
+    "items": "Vlatko Cancar (Bird), DeMarcus Cousins, Troy Daniels, Justin Holiday, Richard Jefferson, David Roddy (two-way) and Markus Howard (two-way)",
+    "note": "Spotrac lists these free-agent holds on Denver's books. Cap holds count only when a team is trying to open cap room; they never count toward the tax or the aprons. Denver is far over the cap, so they don't change anything this season."
+  },
+  "exceptions": [
+    {
+      "type": "Taxpayer mid-level",
+      "amount": 6064000,
+      "status": "Unused, but unavailable while Denver is above the second apron",
+      "src": "Spotrac; Hoops Rumors"
+    },
+    {
+      "type": "Traded player exception (Peyton Watson sign-and-trade with Cleveland)",
+      "amount": 10232558,
+      "status": "Frozen while above the second apron. Expires Aug 20, 2027 (Spotrac)",
+      "src": "Spotrac; Hoops Rumors ($10.2MM)"
+    },
+    {
+      "type": "Traded player exception (Hunter Tyson trade with Brooklyn)",
+      "amount": 2221677,
+      "status": "Expires Feb 5, 2027 (Spotrac). Hoops Rumors confirms Denver has two frozen TPEs but does not list this amount",
+      "src": "Spotrac"
+    }
+  ],
+  "picks": [
+    "2027 1st: owed to Oklahoma City unless it lands 1–5. If protected, Spotrac shows it rolling to 2028, then 2029, then 2030 with the same protection (Spotrac).",
+    "2031 1st: Denver owns its own pick plus Cleveland's unprotected 1st from the Peyton Watson sign-and-trade (Spotrac; Hoops Rumors).",
+    "2032 1st: owned by Brooklyn from the Cameron Johnson trade (Spotrac; Denver Sports calls it unprotected).",
+    "2nd-rounders: Denver received Minnesota's 2028 and Sacramento's 2031 2nds in the Brazile draft-night trade and Sacramento's 2032 2nd in the Watson deal (Hoops Rumors). Spotrac's pick grid has the full list of conditions."
+  ],
+  "key_dates": [
+    {
+      "date": "Sat Oct 17",
+      "text": "Last day to waive players on fully non-guaranteed deals (here, the three Exhibit 10s) without any 2026–27 cap charge. They must clear waivers before the season starts."
+    },
+    {
+      "date": "Mon Oct 19",
+      "text": "Roster limit drops from 21 to 18 (15 standard + 3 two-way) at 3:00 PM MT. Rookie-scale extension deadline at 4:00 PM MT (Strawther). Last day to convert an Exhibit 10 deal to two-way (Denver's 3 two-way slots are full)."
+    },
+    {
+      "date": "Tue Oct 20",
+      "text": "2026–27 regular season begins. Two-way contracts become 50% guaranteed."
+    },
+    {
+      "date": "Thu Oct 22",
+      "text": "Nuggets opener at Oklahoma City."
+    },
+    {
+      "date": "Mon Nov 2",
+      "text": "Deadline to exercise 2027–28 rookie-scale team options (Holmes, $5,547,138). It usually falls on Oct 31 but moves because of the weekend (Hoops Rumors)."
+    },
+    {
+      "date": "Tue Dec 15",
+      "text": "Brazile becomes trade-eligible (Spotrac)."
+    },
+    {
+      "date": "Thu Jan 7, 2027",
+      "text": "Last day to waive a non-guaranteed player before contracts become guaranteed for the season on Jan 10. Denver has no non-guaranteed standard contracts right now."
+    },
+    {
+      "date": "Thu Feb 11, 2027",
+      "text": "Trade deadline, 1:00 PM MT."
+    },
+    {
+      "date": "Tue June 29, 2027",
+      "text": "Player option decisions for Jokić (2027–28) and Nnaji (2027–28), per Spotrac."
+    }
+  ],
+  "footnotes": {
+    "jokic": "Jokić 2027–28: Spotrac's multi-year table and Basketball-Reference both list $62,841,702. Spotrac's deadlines table lists $62,832,000 for the same option.",
+    "gordon": "Gordon: Spotrac cap hits are shown. Basketball-Reference adds his unlikely incentives each season ($33,658,037 / $36,350,680 / $39,043,323). Basketball-Reference's notes also call 2027–28 a player option, but its own table, Spotrac and Spotrac's contract page put the option on 2028–29.",
+    "johnson": "Johnson: Spotrac lists $22,500,000 guaranteed (base salary). Basketball-Reference lists $23,062,500, which includes the likely incentives.",
+    "holmes": "Holmes option date: Spotrac shows Oct 31. Hoops Rumors reports the league deadline moved to Mon Nov 2 because Oct 31 is a Saturday.",
+    "brazile": "Brazile: Basketball-Reference shows only 2026–27 and calls it a one-year minimum deal. Hoops Rumors (via HoopsHype's Michael Scotto) and Spotrac both report the four-year, $9,264,648 deal shown here.",
+    "diallo": "Diallo is missing from Basketball-Reference's Nuggets contract table. His one-year guaranteed rookie-minimum deal is confirmed by Spotrac, Hoops Rumors, ESPN (Shams Charania) and the NBA.com transaction log, so he is counted."
+  },
+  "sources": [
+    [
+      "Spotrac cap table",
+      "https://www.spotrac.com/nba/denver-nuggets/cap/_/year/2026"
+    ],
+    [
+      "Spotrac multi-year",
+      "https://www.spotrac.com/nba/denver-nuggets/yearly"
+    ],
+    [
+      "Spotrac tax tracker",
+      "https://www.spotrac.com/nba/tax/_/year/2026"
+    ],
+    [
+      "Basketball-Reference contracts",
+      "https://www.basketball-reference.com/contracts/DEN.html"
+    ],
+    [
+      "NBA.com 2026–27 cap release",
+      "https://www.nba.com/news/nba-salary-cap-2026-27-season"
+    ],
+    [
+      "RealGM cap history",
+      "https://basketball.realgm.com/nba/info/salary_cap/"
+    ],
+    [
+      "Hoops Rumors offseason check-in",
+      "https://www.hoopsrumors.com/2026/09/nba-2026-offseason-check-in-denver-nuggets.html"
+    ],
+    [
+      "Hoops Rumors key dates",
+      "https://www.hoopsrumors.com/2026/09/key-2026-nba-preseason-dates-deadlines.html"
+    ],
+    [
+      "Hoops Rumors October deadlines",
+      "https://www.hoopsrumors.com/2026/10/nba-roster-contract-deadlines-to-watch-in-october-4.html"
+    ],
+    [
+      "Hoops Rumors: Valanciunas stretch",
+      "https://www.hoopsrumors.com/2026/08/nuggets-to-use-stretch-provision-on-jonas-valanciunas.html"
+    ],
+    [
+      "Hoops Rumors: draft-pick signings",
+      "https://www.hoopsrumors.com/2026/07/2026-nba-draft-pick-signings.html"
+    ],
+    [
+      "Hoops Rumors: Diallo",
+      "https://www.hoopsrumors.com/2026/07/alpha-diallo-to-sign-one-year-deal-with-nuggets.html"
+    ],
+    [
+      "The CBA Guide 2026–27 amounts",
+      "https://cbaguide.com/resources/amounts/"
+    ]
+  ]
+}
