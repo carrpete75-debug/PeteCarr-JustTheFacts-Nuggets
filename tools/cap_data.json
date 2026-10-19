@@ -1,6 +1,6 @@
 {
   "_about": "Hand-maintained data for docs/salary-cap.html (built by tools/build_cap.py). Primary source: Spotrac 2026-27 Nuggets cap table + multi-year page; cross-checked against Basketball-Reference contracts (DEN), Hoops Rumors and NBA.com. Never guess: use null for anything unverified (renders as an em dash with a note). Amounts are whole dollars. option: PO = player option, TO = team option, ETO = early termination option, NG = non-guaranteed. When a signing/waiver/option/extension happens, edit this file and rerun the builder.",
-  "checked": "2026-10-17T16:45:00-06:00",
+  "checked": "2026-10-19T16:45:00-06:00",
   "season": "2026-27",
   "future_seasons": [
     "2027-28",
@@ -178,8 +178,7 @@
       "guarantee": "Fully guaranteed (4th-year team option exercised Oct 22, 2025)",
       "acquired": "Drafted by Denver, 2023 (No. 29)",
       "signed": "4 yr / $12.5M rookie scale, July 6, 2023",
-      "status_note": "Rookie-scale extension deadline Mon Oct 19, 4:00 PM MT; if not extended, restricted free agent in 2027 (qualifying offer $7,723,090 per Spotrac)",
-      "flag": "deadline"
+      "status_note": "No rookie-scale extension by the Mon Oct 19, 4:00 PM MT deadline (none reported by ESPN, Hoops Rumors or NBA.com's transaction log). Contract expires after 2026–27; restricted free agent in 2027 if Denver tenders the qualifying offer ($7,723,090 per Spotrac)."
     },
     {
       "name": "DaRon Holmes II",
@@ -323,7 +322,7 @@
   "waived_no_charge": [
     {
       "name": "Dane Goodwin, Coleman Hawkins, Emanuel Miller",
-      "note": "Exhibit 10, non-guaranteed; all three waived Sat Oct 17, 2026, the last day to cut fully non-guaranteed deals without a 2026–27 cap charge (NBA.com transaction log; Hoops Rumors). They clear waivers Mon Oct 19. Hoops Rumors expects most or all to join the Grand Rapids Gold."
+      "note": "Exhibit 10, non-guaranteed; all three waived Sat Oct 17, 2026, the last day to cut fully non-guaranteed deals without a 2026–27 cap charge (NBA.com transaction log; Hoops Rumors). Their waiver period ended Mon Oct 19; no claim was reported (NBA.com transaction log, ~4:40 PM MDT). Hoops Rumors expects most or all to join the Grand Rapids Gold."
     },
     {
       "name": "Lonnie Walker IV",
@@ -380,7 +379,7 @@
     },
     {
       "date": "Mon Oct 19",
-      "text": "Roster limit drops from 21 to 18 (15 standard + 3 two-way) at 3:00 PM MT; Denver is already at 17. Rookie-scale extension deadline at 4:00 PM MT (Strawther)."
+      "text": "Roster limit dropped from 21 to 18 (15 standard + 3 two-way) at 3:00 PM MT; Denver was already at 17. Rookie-scale extension deadline passed at 4:00 PM MT with no Strawther extension, so he's headed for restricted free agency in 2027."
     },
     {
       "date": "Tue Oct 20",
@@ -471,6 +470,10 @@
     [
       "The CBA Guide 2026–27 amounts",
       "https://cbaguide.com/resources/amounts/"
+    ],
+    [
+      "Hoops Rumors: extension deadline day",
+      "https://www.hoopsrumors.com/2026/10/contract-roster-deadlines-loom-for-nba-teams-7.html"
     ]
   ]
 }
