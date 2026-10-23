@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nikola Jokić triple-double tracker: 2026–27 season count, game log and his chase of the NBA career triple-double record.">
+  <title>Jokić Triple-Double Tracker | Just the Facts — Nuggets</title>
+  <link rel="stylesheet" href="styles.css?v=nuggets-4">
+  <style>
+    /* Jokić triple-double tracker (draft 2026-10-23). Page-local styles, same approach as salary-cap.html. No gold text on white. */
+    .cap-tiles {{ display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); margin-bottom: 1rem; }}
+    .cap-tile {{ background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--gold); border-radius: 0.6rem; padding: 0.7rem 0.8rem; }}
+    .cap-tile dt {{ color: var(--muted); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }}
+    .cap-tile dd {{ margin: 0.15rem 0 0; color: var(--navy); font-size: 1.6rem; font-weight: 800; font-variant-numeric: tabular-nums; }}
+    .cap-tile dd small {{ display: block; color: var(--muted); font-size: 0.75rem; font-weight: 600; }}
+    .td-bar {{ background: var(--paper); border: 1px solid var(--line); border-radius: 999px; height: 0.9rem; overflow: hidden; }}
+    .td-bar span {{ background: var(--gold); display: block; height: 100%; }}
+    .td-den td {{ background: var(--gold-soft); font-weight: 700; }}
+    @media (max-width: 41.99rem) {{
+      .td-table thead {{ border: 0; clip: rect(0 0 0 0); height: 1px; overflow: hidden; position: absolute; width: 1px; }}
+      .td-table, .td-table tbody, .td-table tr, .td-table td {{ display: block; width: 100%; }}
+      .td-table tr {{ border-bottom: 1px solid var(--line); padding: 0.45rem 0.55rem; }}
+      .td-table td {{ border: 0; padding: 0.1rem 0; white-space: normal; }}
+      .td-table td::before {{ color: var(--muted); content: attr(data-label); display: inline-block; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em; min-width: 7.5rem; text-transform: uppercase; }}
+      .td-table td[colspan]::before {{ display: none; }}
+    }}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nuggets-banner" role="img" aria-label="Denver Nuggets — Just the Facts">
+      <span class="nuggets-banner__accent nuggets-banner__accent--left" aria-hidden="true"></span>
+      <span class="nuggets-banner__accent" aria-hidden="true"></span>
+      <div class="nuggets-banner__inner">
+        <div class="nuggets-banner__titles">
+          <p class="nuggets-banner__team">Denver Nuggets</p>
+          <span class="nuggets-banner__rule" aria-hidden="true"></span>
+          <p class="nuggets-banner__site">Just the Facts</p>
+        </div>
+      </div>
+    </div>
+    <img class="nuggets-desk-logo" src="nuggets-desk-logo.png" alt="Nuggets Desk logo" width="112" height="112">
+    <div class="header-bar">
+      <div class="header-inner header-inner--main">
+        <div class="brand-block">
+          <div>
+            <a class="brand" href="index.html">Just the Facts — Nuggets</a>
+            <p class="tagline">A daily, unofficial fan briefing</p>
+          </div>
+        </div>
+        <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="roster.html">Roster</a>
+        <a href="salary-cap.html">Salary Cap</a>
+        <a href="jokic-triple-doubles.html" aria-current="page">Triple-Doubles</a>
+        <a href="archive/index.html">Archive</a>
+        <a href="hall-of-fame.html">Hall of Fame</a>
+      </nav>
+      </div>
+    </div>
+  </header>
+  <div class="page-shell">
+  <main class="main sched-main td-main">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="kicker">2026–27 season · regular season only</p>
+      <h1 id="page-title">Jokić triple-double tracker</h1>
+      <p class="deck">{DECK}</p>
+      <p class="pub-meta">As of <strong>{ASOF}</strong></p>
+    </section>
+
+    <section class="card" aria-labelledby="sum-heading">
+      <div class="card-head"><h2 id="sum-heading">The record chase</h2><span class="sched-count">{STATUS}</span></div>
+      <dl class="cap-tiles">
+        <div class="cap-tile"><dt>2026–27 triple-doubles</dt><dd>{SEASON}<small>in {GP} played</small></dd></div>
+        <div class="cap-tile"><dt>Jokić career</dt><dd>{CAREER}<small>regular season</small></dd></div>
+        <div class="cap-tile"><dt>NBA record</dt><dd>{REC}<small>{HOLDER}</small></dd></div>
+        <div class="cap-tile"><dt>{GAPLABEL}</dt><dd>{GAP}<small>{GAPSUB}</small></dd></div>
+      </dl>
+      <div class="td-bar" role="img" aria-label="{PCT}% of the record"><span style="width:{PCT}%"></span></div>
+      <p class="note">{NOTE}</p>
+    </section>
+
+    <section class="card" aria-labelledby="log-heading">
+      <div class="card-head"><h2 id="log-heading">2026–27 triple-doubles</h2><span class="sched-count">{SEASON} so far</span></div>
+      <div class="table-wrap"><table class="facts td-table"><thead><tr><th scope="col">#</th><th scope="col">Career #</th><th scope="col">Date</th><th scope="col">Opponent</th><th scope="col">PTS</th><th scope="col">REB</th><th scope="col">AST</th><th scope="col">Result</th></tr></thead><tbody>
+        {ROWS}
+      </tbody></table></div>
+      <p class="note">Last game checked: {LAST}</p>
+    </section>
+
+    <section class="card" aria-labelledby="board-heading">
+      <h2 id="board-heading">All-time leaders (regular season)</h2>
+      <div class="table-wrap"><table class="facts td-table"><thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Triple-doubles</th><th scope="col">Status</th></tr></thead><tbody>
+        {BOARD}
+      </tbody></table></div>
+    </section>
+
+    <section class="card" aria-labelledby="td-sources-heading">
+      <h2 id="td-sources-heading">Sources &amp; notes</h2>
+      <p class="note">A triple-double is 10 or more in three of points, rebounds, assists, steals and blocks. Counts are regular season only; playoffs are excluded. Career totals come from Basketball-Reference, checked against NBA.com; game lines come from ESPN box scores. Checked {CHECKED}.</p>
+      <p class="source-row">Sources: {SRCS}</p>
+    </section>
+  </main>
+  </div>
+  <footer class="footer"><div class="footer-inner"><p>Unofficial fan briefing. Not affiliated with the Denver Nuggets or the NBA. Stats are from public sources and can be revised; check the sources for the latest.</p></div></footer>
+</body>
+</html>
