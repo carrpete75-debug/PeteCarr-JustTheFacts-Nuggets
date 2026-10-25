@@ -1,17 +1,87 @@
 {
-  "checked": "Fri Oct 23, 2026 · ~7:50 AM MDT",
+  "checked": "Sun Oct 25, 2026 · ~5:30 AM MDT",
   "season": "2026-27",
   "career_before_season": 198,
-  "record": {"holder": "Russell Westbrook", "count": 209, "note": "retired Aug 2026; last triple-double Mar 15, 2026 (Boston Globe/AP)"},
+  "record": {
+    "holder": "Russell Westbrook",
+    "count": 209,
+    "note": "retired Aug 2026; last triple-double Mar 15, 2026 (Boston Globe/AP)"
+  },
   "games_checked": [
-    {"date": "2026-10-22", "opp": "@ Thunder", "pts": 13, "reb": 7, "ast": 5, "stl": 1, "blk": 1, "result": "L 84–96", "espn_id": "401909094"}
+    {
+      "date": "2026-10-22",
+      "opp": "@ Thunder",
+      "pts": 13,
+      "reb": 7,
+      "ast": 5,
+      "stl": 1,
+      "blk": 1,
+      "result": "L 84–96",
+      "espn_id": "401909094"
+    },
+    {
+      "date": "2026-10-24",
+      "opp": "vs Pelicans",
+      "pts": 35,
+      "reb": 15,
+      "ast": 10,
+      "stl": 2,
+      "blk": 3,
+      "result": "W 141–135 (OT)",
+      "espn_id": "401909859"
+    }
   ],
-  "leaders": [["Russell Westbrook", 209, "Retired 2026"], ["Nikola Jokić", 198, "Active · Nuggets"], ["Oscar Robertson", 181, "Hall of Fame"], ["Magic Johnson", 138, "Hall of Fame"], ["LeBron James", 125, "Active"]],
+  "leaders": [
+    [
+      "Russell Westbrook",
+      209,
+      "Retired 2026"
+    ],
+    [
+      "Nikola Jokić",
+      198,
+      "Active · Nuggets"
+    ],
+    [
+      "Oscar Robertson",
+      181,
+      "Hall of Fame"
+    ],
+    [
+      "Magic Johnson",
+      138,
+      "Hall of Fame"
+    ],
+    [
+      "LeBron James",
+      125,
+      "Active"
+    ]
+  ],
   "sources": [
-    ["Basketball-Reference career leaders", "https://www.basketball-reference.com/leaders/trp_dbl_career.html"],
-    ["NBA.com: most triple-doubles in NBA history", "https://www.nba.com/news/most-triple-doubles-in-nba-history"],
-    ["Sporting News (Westbrook retirement, 198 vs 209)", "https://www.sportingnews.com/us/nba/denver-nuggets/news/nikola-jokic-triple-double-record-russell-westbrook-retirement/f2a8aa56a5c9dcc4949432b6"],
-    ["Boston Globe/AP: Westbrook retires", "https://www.bostonglobe.com/2026/08/12/sports/nba-russell-westbrook-retirement/"],
-    ["ESPN box score, Oct 22 @ OKC", "https://www.espn.com/nba/boxscore/_/gameId/401909094"]
+    [
+      "Basketball-Reference career leaders",
+      "https://www.basketball-reference.com/leaders/trp_dbl_career.html"
+    ],
+    [
+      "NBA.com: most triple-doubles in NBA history",
+      "https://www.nba.com/news/most-triple-doubles-in-nba-history"
+    ],
+    [
+      "Sporting News (Westbrook retirement, 198 vs 209)",
+      "https://www.sportingnews.com/us/nba/denver-nuggets/news/nikola-jokic-triple-double-record-russell-westbrook-retirement/f2a8aa56a5c9dcc4949432b6"
+    ],
+    [
+      "Boston Globe/AP: Westbrook retires",
+      "https://www.bostonglobe.com/2026/08/12/sports/nba-russell-westbrook-retirement/"
+    ],
+    [
+      "ESPN box score, Oct 22 @ OKC",
+      "https://www.espn.com/nba/boxscore/_/gameId/401909094"
+    ],
+    [
+      "ESPN box score, Oct 24 vs NOP",
+      "https://www.espn.com/nba/boxscore/_/gameId/401909859"
+    ]
   ]
 }
