@@ -1,5 +1,5 @@
 {
-  "checked": "Sun Oct 25, 2026 · ~5:30 AM MDT",
+  "checked": "Tue Oct 27, 2026 · ~5:15 AM MDT",
   "season": "2026-27",
   "career_before_season": 198,
   "record": {
@@ -29,6 +29,17 @@
       "blk": 3,
       "result": "W 141–135 (OT)",
       "espn_id": "401909859"
+    },
+    {
+      "date": "2026-10-26",
+      "opp": "vs Warriors",
+      "pts": 19,
+      "reb": 7,
+      "ast": 11,
+      "stl": 1,
+      "blk": 3,
+      "result": "L 114–134",
+      "espn_id": "401909876"
     }
   ],
   "leaders": [
