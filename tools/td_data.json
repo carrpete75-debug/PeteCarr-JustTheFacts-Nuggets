@@ -1,5 +1,5 @@
 {
-  "checked": "Tue Oct 27, 2026 · ~5:15 AM MDT",
+  "checked": "Thu Oct 29, 2026 · ~5:20 AM MDT",
   "season": "2026-27",
   "career_before_season": 198,
   "record": {
@@ -40,6 +40,17 @@
       "blk": 3,
       "result": "L 114–134",
       "espn_id": "401909876"
+    },
+    {
+      "date": "2026-10-28",
+      "opp": "@ Pelicans",
+      "pts": 21,
+      "reb": 13,
+      "ast": 10,
+      "stl": 1,
+      "blk": 0,
+      "result": "W 104–91",
+      "espn_id": "401909889"
     }
   ],
   "leaders": [
@@ -93,6 +104,14 @@
     [
       "ESPN box score, Oct 24 vs NOP",
       "https://www.espn.com/nba/boxscore/_/gameId/401909859"
+    ],
+    [
+      "ESPN box score, Oct 26 vs GSW",
+      "https://www.espn.com/nba/boxscore/_/gameId/401909876"
+    ],
+    [
+      "ESPN box score, Oct 28 @ NOP",
+      "https://www.espn.com/nba/boxscore/_/gameId/401909889"
     ]
   ]
 }
