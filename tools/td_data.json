@@ -1,5 +1,5 @@
 {
-  "checked": "Thu Oct 29, 2026 · ~5:20 AM MDT",
+  "checked": "Sat Oct 31, 2026 · ~5:20 AM MDT",
   "season": "2026-27",
   "career_before_season": 198,
   "record": {
@@ -51,6 +51,17 @@
       "blk": 0,
       "result": "W 104–91",
       "espn_id": "401909889"
+    },
+    {
+      "date": "2026-10-30",
+      "opp": "@ Suns",
+      "pts": 18,
+      "reb": 7,
+      "ast": 10,
+      "stl": 3,
+      "blk": 0,
+      "result": "W 127–120",
+      "espn_id": "401909286"
     }
   ],
   "leaders": [
@@ -112,6 +123,10 @@
     [
       "ESPN box score, Oct 28 @ NOP",
       "https://www.espn.com/nba/boxscore/_/gameId/401909889"
+    ],
+    [
+      "ESPN box score, Oct 30 @ PHX",
+      "https://www.espn.com/nba/boxscore/_/gameId/401909286"
     ]
   ]
 }
