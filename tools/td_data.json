@@ -1,5 +1,5 @@
 {
-  "checked": "Sat Oct 31, 2026 · ~5:20 AM MDT",
+  "checked": "Tue Nov 3, 2026 · ~5:30 AM MST",
   "season": "2026-27",
   "career_before_season": 198,
   "record": {
@@ -62,6 +62,17 @@
       "blk": 0,
       "result": "W 127–120",
       "espn_id": "401909286"
+    },
+    {
+      "date": "2026-11-02",
+      "opp": "vs Trail Blazers",
+      "pts": 26,
+      "reb": 9,
+      "ast": 8,
+      "stl": 4,
+      "blk": 1,
+      "result": "L 110–118",
+      "espn_id": "401909918"
     }
   ],
   "leaders": [
@@ -127,6 +138,10 @@
     [
       "ESPN box score, Oct 30 @ PHX",
       "https://www.espn.com/nba/boxscore/_/gameId/401909286"
+    ],
+    [
+      "ESPN box score, Nov 2 vs POR",
+      "https://www.espn.com/nba/boxscore/_/gameId/401909918"
     ]
   ]
 }
