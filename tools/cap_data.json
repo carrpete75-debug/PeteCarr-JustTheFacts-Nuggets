@@ -1,6 +1,6 @@
 {
   "_about": "Hand-maintained data for docs/salary-cap.html (built by tools/build_cap.py). Primary source: Spotrac 2026-27 Nuggets cap table + multi-year page; cross-checked against Basketball-Reference contracts (DEN), Hoops Rumors and NBA.com. Never guess: use null for anything unverified (renders as an em dash with a note). Amounts are whole dollars. option: PO = player option, TO = team option, ETO = early termination option, NG = non-guaranteed. When a signing/waiver/option/extension happens, edit this file and rerun the builder.",
-  "checked": "2026-10-19T16:45:00-06:00",
+  "checked": "2026-11-03T16:45:00-07:00",
   "season": "2026-27",
   "future_seasons": [
     "2027-28",
@@ -187,17 +187,11 @@
       "cap_hit": 3372120,
       "guaranteed": 3372120,
       "fn": "holmes",
-      "future": {
-        "2027-28": {
-          "amount": 5547138,
-          "option": "TO"
-        }
-      },
-      "guarantee": "Guaranteed in 2026–27 (3rd-year option exercised Oct 22, 2025); 2027–28 team option",
+      "future": {},
+      "guarantee": "Guaranteed in 2026–27 (3rd-year option exercised Oct 22, 2025); 2027–28 team option ($5,547,138) declined",
       "acquired": "Drafted 2024 (No. 22, via draft-night trade with Phoenix)",
       "signed": "Rookie scale, July 9, 2024",
-      "status_note": "2027–28 team option ($5,547,138) decision due Mon Nov 2, 2026",
-      "flag": "deadline"
+      "status_note": "2027–28 team option declined (deadline Mon Nov 2, 2026); headed for unrestricted free agency in 2027. Denver keeps his Bird rights unless he is waived, but can't offer a starting salary above the declined option amount."
     },
     {
       "name": "DeMar DeRozan",
@@ -391,7 +385,7 @@
     },
     {
       "date": "Mon Nov 2",
-      "text": "Deadline to exercise 2027–28 rookie-scale team options (Holmes, $5,547,138). It usually falls on Oct 31 but moves because of the weekend (Hoops Rumors)."
+      "text": "Deadline to exercise 2027–28 rookie-scale team options passed. Denver declined Holmes's $5,547,138 option (Hoops Rumors, HoopsHype, RealGM/Spotrac), so he's headed for unrestricted free agency in 2027."
     },
     {
       "date": "Tue Dec 15",
@@ -414,7 +408,7 @@
     "jokic": "Jokić 2027–28: Spotrac's multi-year table and Basketball-Reference both list $62,841,702. Spotrac's deadlines table lists $62,832,000 for the same option.",
     "gordon": "Gordon: Spotrac cap hits are shown. Basketball-Reference adds his unlikely incentives each season ($33,658,037 / $36,350,680 / $39,043,323). Basketball-Reference's notes also call 2027–28 a player option, but its own table, Spotrac and Spotrac's contract page put the option on 2028–29.",
     "johnson": "Johnson: Spotrac lists $22,500,000 guaranteed (base salary). Basketball-Reference lists $23,062,500, which includes the likely incentives.",
-    "holmes": "Holmes option date: Spotrac shows Oct 31. Hoops Rumors reports the league deadline moved to Mon Nov 2 because Oct 31 is a Saturday.",
+    "holmes": "Holmes: Denver did not exercise the 2027–28 rookie-scale team option ($5,547,138 on Spotrac; Hoops Rumors lists $5,547,137) by the Mon Nov 2 deadline, per Hoops Rumors (Nov 3), HoopsHype's Michael Scotto (via RotoWire/CBS Sports) and RealGM/Spotrac's Keith Smith. The team has not posted a release. His 2027–28 amount is no longer counted in future totals.",
     "brazile": "Brazile: Basketball-Reference shows only 2026–27 and calls it a one-year minimum deal. Hoops Rumors (via HoopsHype's Michael Scotto) and Spotrac both report the four-year, $9,264,648 deal shown here.",
     "diallo": "Diallo is missing from Basketball-Reference's Nuggets contract table. His one-year guaranteed rookie-minimum deal is confirmed by Spotrac, Hoops Rumors, ESPN (Shams Charania) and the NBA.com transaction log, so he is counted."
   },
@@ -474,6 +468,14 @@
     [
       "Hoops Rumors: extension deadline day",
       "https://www.hoopsrumors.com/2026/10/contract-roster-deadlines-loom-for-nba-teams-7.html"
+    ],
+    [
+      "Hoops Rumors: Nuggets pass on 2027/28 option for DaRon Holmes (Nov 3, 2026)",
+      "https://www.hoopsrumors.com/2026/11/nuggets-pass-on-2027-28-option-for-daron-holmes.html"
+    ],
+    [
+      "RealGM: seven 2027-28 rookie-scale options declined (Nov 3, 2026)",
+      "https://basketball.realgm.com/wiretap/288022/Seven-Players-See-27-28-Rookie-Scale-Team-Options-Declined"
     ]
   ]
 }
