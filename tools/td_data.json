@@ -1,5 +1,5 @@
 {
-  "checked": "Tue Nov 3, 2026 · ~5:30 AM MST",
+  "checked": "Thu Nov 5, 2026 · ~5:30 AM MST",
   "season": "2026-27",
   "career_before_season": 198,
   "record": {
@@ -73,6 +73,17 @@
       "blk": 1,
       "result": "L 110–118",
       "espn_id": "401909918"
+    },
+    {
+      "date": "2026-11-04",
+      "opp": "vs Raptors",
+      "pts": 32,
+      "reb": 10,
+      "ast": 11,
+      "stl": 3,
+      "blk": 0,
+      "result": "W 128–109",
+      "espn_id": "401909931"
     }
   ],
   "leaders": [
@@ -142,6 +153,10 @@
     [
       "ESPN box score, Nov 2 vs POR",
       "https://www.espn.com/nba/boxscore/_/gameId/401909918"
+    ],
+    [
+      "ESPN box score, Nov 4 vs TOR",
+      "https://www.espn.com/nba/boxscore/_/gameId/401909931"
     ]
   ]
 }
