@@ -1,5 +1,5 @@
 {
-  "checked": "Thu Nov 5, 2026 · ~5:30 AM MST",
+  "checked": "Fri Nov 6, 2026 \u00b7 ~5:20 AM MST",
   "season": "2026-27",
   "career_before_season": 198,
   "record": {
@@ -16,7 +16,7 @@
       "ast": 5,
       "stl": 1,
       "blk": 1,
-      "result": "L 84–96",
+      "result": "L 84\u201396",
       "espn_id": "401909094"
     },
     {
@@ -27,7 +27,7 @@
       "ast": 10,
       "stl": 2,
       "blk": 3,
-      "result": "W 141–135 (OT)",
+      "result": "W 141\u2013135 (OT)",
       "espn_id": "401909859"
     },
     {
@@ -38,7 +38,7 @@
       "ast": 11,
       "stl": 1,
       "blk": 3,
-      "result": "L 114–134",
+      "result": "L 114\u2013134",
       "espn_id": "401909876"
     },
     {
@@ -49,7 +49,7 @@
       "ast": 10,
       "stl": 1,
       "blk": 0,
-      "result": "W 104–91",
+      "result": "W 104\u201391",
       "espn_id": "401909889"
     },
     {
@@ -60,7 +60,7 @@
       "ast": 10,
       "stl": 3,
       "blk": 0,
-      "result": "W 127–120",
+      "result": "W 127\u2013120",
       "espn_id": "401909286"
     },
     {
@@ -71,7 +71,7 @@
       "ast": 8,
       "stl": 4,
       "blk": 1,
-      "result": "L 110–118",
+      "result": "L 110\u2013118",
       "espn_id": "401909918"
     },
     {
@@ -82,7 +82,7 @@
       "ast": 11,
       "stl": 3,
       "blk": 0,
-      "result": "W 128–109",
+      "result": "W 128\u2013109",
       "espn_id": "401909931"
     }
   ],
@@ -93,9 +93,9 @@
       "Retired 2026"
     ],
     [
-      "Nikola Jokić",
+      "Nikola Joki\u0107",
       198,
-      "Active · Nuggets"
+      "Active \u00b7 Nuggets"
     ],
     [
       "Oscar Robertson",
