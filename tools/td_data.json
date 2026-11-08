@@ -1,5 +1,5 @@
 {
-  "checked": "Sat Nov 7, 2026 \u00b7 ~5:15 AM MST",
+  "checked": "Sun Nov 8, 2026 \u00b7 ~5:15 AM MST",
   "season": "2026-27",
   "career_before_season": 198,
   "record": {
@@ -84,6 +84,17 @@
       "blk": 0,
       "result": "W 128\u2013109",
       "espn_id": "401909931"
+    },
+    {
+      "date": "2026-11-07",
+      "opp": "@ Pacers (Mexico City)",
+      "pts": 19,
+      "reb": 13,
+      "ast": 8,
+      "stl": 1,
+      "blk": 1,
+      "result": "W 114\u2013102",
+      "espn_id": "401909938"
     }
   ],
   "leaders": [
