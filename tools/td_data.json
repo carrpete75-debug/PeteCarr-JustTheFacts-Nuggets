@@ -1,5 +1,5 @@
 {
- "checked": "Tue Nov 10, 2026 · ~5:15 AM MST",
+ "checked": "Thu Nov 12, 2026 · ~5:20 AM MST",
  "season": "2026-27",
  "career_before_season": 198,
  "record": {
@@ -106,6 +106,17 @@
    "blk": 2,
    "result": "L 100–110",
    "espn_id": "401909957"
+  },
+  {
+   "date": "2026-11-11",
+   "opp": "@ Grizzlies",
+   "pts": 27,
+   "reb": 11,
+   "ast": 8,
+   "stl": 1,
+   "blk": 1,
+   "result": "W 123–118",
+   "espn_id": "401909970"
   }
  ],
  "leaders": [
@@ -183,6 +194,10 @@
   [
    "ESPN box score, Nov 9 @ HOU",
    "https://www.espn.com/nba/boxscore/_/gameId/401909957"
+  ],
+  [
+   "ESPN box score, Nov 11 @ MEM",
+   "https://www.espn.com/nba/boxscore/_/gameId/401909970"
   ]
  ]
 }
