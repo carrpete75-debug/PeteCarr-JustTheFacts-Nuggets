@@ -1,5 +1,5 @@
 {
-  "checked": "Thu Nov 19, 2026 · ~5:10 AM MST",
+  "checked": "Sat Nov 21, 2026 · ~5:15 AM MST",
   "season": "2026-27",
   "career_before_season": 198,
   "record": {
@@ -150,6 +150,17 @@
       "blk": 1,
       "result": "W 105–101",
       "espn_id": "401910015"
+    },
+    {
+      "date": "2026-11-20",
+      "opp": "vs Rockets",
+      "pts": 26,
+      "reb": 7,
+      "ast": 11,
+      "stl": 0,
+      "blk": 0,
+      "result": "W 133–124",
+      "espn_id": "401909312"
     }
   ],
   "leaders": [
@@ -243,6 +254,10 @@
     [
       "ESPN box score, Nov 18 vs BOS",
       "https://www.espn.com/nba/boxscore/_/gameId/401910015"
+    ],
+    [
+      "ESPN box score, Nov 20 vs HOU",
+      "https://www.espn.com/nba/boxscore/_/gameId/401909312"
     ]
   ]
 }
